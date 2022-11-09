@@ -1,0 +1,21 @@
+header {
+  background-color: var(--color-800);
+  color: var(--color-300);
+
+  padding: 20px;
+}
+
+header .and {
+  color: rgba(255, 72, 0, 0.733);
+}
+
+header .name {
+  color: rgb(247, 183, 89);
+  border-bottom: 2px solid rgb(247, 183, 89);
+  padding-bottom: 5px;
+}
+
+header .intro {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
