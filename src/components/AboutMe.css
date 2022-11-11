@@ -1,0 +1,15 @@
+main .about-me {
+  max-width: 600px;
+  margin: auto;
+}
+
+main .about-me-p {
+  color: var(--color-300);
+  font-size: 1.3rem;
+}
+
+main .about-me-heading {
+  color: var(--color-200);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}

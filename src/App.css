@@ -5,8 +5,14 @@ html {
 :root {
   --color-900: #0f172a;
   --color-800: #1e293b;
+  --color-700: #334155;
+  --color-600: #475569;
+  --color-500: #64748b;
   --color-400: #94a3b8;
   --color-300: #cbd5e1;
+  --color-200: #e2e8f0;
+  --color-100: #f1f5f9;
+  --color-50: #f8fafc;
 }
 
 body {
@@ -15,6 +21,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+#root > div {
+  min-height: 100vh;
+}
+#root > .dark {
+  background-color: var(--color-700);
 }
 
 code {

@@ -1,8 +1,6 @@
-header {
+header.dark {
   background-color: var(--color-800);
   color: var(--color-300);
-
-  padding: 20px;
 }
 
 header .and {
@@ -10,12 +8,19 @@ header .and {
 }
 
 header .name {
-  color: rgb(247, 183, 89);
-  border-bottom: 2px solid rgb(247, 183, 89);
+  --color: rgb(247, 183, 89);
+  color: var(--color);
+  border-bottom: 2px solid var(--color);
   padding-bottom: 5px;
 }
 
 header .intro {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   max-width: 600px;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+header {
+  margin-bottom: 50px;
 }
