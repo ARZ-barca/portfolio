@@ -4,14 +4,14 @@ header .nav {
   font-size: 1.2rem;
 }
 
-header .nav * {
+header .nav > * {
   padding: 10px;
   transform-origin: top left;
   transition: transform 100ms ease-in-out;
   cursor: pointer;
 }
 
-.dark header .nav * {
+.dark header .nav > * {
   background-color: var(--color-900);
   border-bottom: 1px solid var(--color-400);
 }
@@ -21,7 +21,7 @@ header .nav * {
   background-color: var(--color-900);
 }
 
-header .nav *:hover {
+header .nav > *:hover {
   transform: translateY(3px);
 }
 
@@ -37,4 +37,17 @@ header .nav .selected {
 header .nav a {
   text-decoration: none;
   color: inherit;
+}
+
+header .nav .github-link {
+  display: flex;
+  gap: 5px;
+}
+
+header .nav .github-link img {
+  width: 20px;
+  height: 20px;
+  align-self: center;
+  filter: invert(73%) sepia(9%) saturate(686%) hue-rotate(175deg)
+    brightness(88%) contrast(88%);
 }

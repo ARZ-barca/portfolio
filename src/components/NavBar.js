@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavBar.css";
+import externallinkSVG from "../images/external-link.svg";
 
 function NavBar(props) {
   return (
@@ -26,8 +27,10 @@ function NavBar(props) {
         href="https://github.com/ARZ-barca"
         target={"_blank"}
         rel={"noreferrer"}
+        className="github-link"
       >
-        GitHub
+        <span>GitHub</span>
+        <img src={externallinkSVG} alt="link out"></img>
       </a>
     </nav>
   );
