@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/arz-barca.github.io/portfolio/static/css/main.099a98f5.css",
+    "main.js": "/arz-barca.github.io/portfolio/static/js/main.ff02fb03.js",
+    "index.html": "/arz-barca.github.io/portfolio/index.html",
+    "main.099a98f5.css.map": "/arz-barca.github.io/portfolio/static/css/main.099a98f5.css.map",
+    "main.ff02fb03.js.map": "/arz-barca.github.io/portfolio/static/js/main.ff02fb03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.099a98f5.css",
+    "static/js/main.ff02fb03.js"
+  ]
+}
