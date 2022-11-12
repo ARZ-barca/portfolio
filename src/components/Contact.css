@@ -1,22 +1,26 @@
-main .about-me {
+main .contact-info {
   max-width: 600px;
   margin: auto;
   padding: 0 20px 20px 20px;
 }
 
-main .about-me-p {
+main .contact-info ul li {
   font-size: 1.3rem;
 }
 
-main .about-me-heading {
+main .contact-info a {
+  color: inherit;
+}
+
+main .contact-info-heading {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
-.dark main .about-me-p {
+.dark main .contact-info {
   color: var(--color-300);
 }
 
-.dark main .about-me-heading {
+.dark main .contact-info {
   color: var(--section-headings-dark);
 }

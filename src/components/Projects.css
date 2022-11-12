@@ -1,32 +1,41 @@
 main .projects {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
-  padding: 0 20px;
+  padding: 0 30px 20px 30px;
 }
 
 .project-card {
-  border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
-
-  color: var(--color-200);
-
   width: 300px;
   height: 200px;
-
   position: relative;
 }
 
+.dark main .project-card {
+  border: 2px solid var(--color-400);
+  color: var(--color-300);
+  background-color: var(--color-800);
+  box-shadow: 0 0 7px 0 var(--color-800);
+}
+
 .projects-heading {
-  max-width: 600px;
-  margin: auto;
-  margin-bottom: 15px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.dark main .projects-heading {
+  color: var(--section-headings-dark);
 }
 
 .project-heading {
-  color: var(--color-300);
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.dark main .project-heading {
+  color: var(--color-300);
 }
 
 .project-links {
@@ -43,12 +52,31 @@ main .projects {
 .project-links a {
   flex: 1;
   text-align: center;
-  border-top: 1px solid black;
   padding: 5px;
   color: inherit;
   text-decoration: none;
 }
 
-.project-links a:not(:last-child) {
-  border-right: 1px solid black;
+.dark main .project-links a:hover {
+  background-color: var(--color-900);
+}
+
+.dark main .project-links a {
+  border-top: 1px solid var(--color-400);
+}
+
+.dark main .project-links a:not(:last-child) {
+  border-right: 1px solid var(--color-400);
+}
+
+.project-links a:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.project-links a:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.project-description a {
+  color: inherit;
 }

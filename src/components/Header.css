@@ -1,4 +1,4 @@
-header.dark {
+.dark header {
   background-color: var(--color-800);
   color: var(--color-300);
 }
@@ -17,10 +17,17 @@ header .name {
 header .intro {
   font-size: 1.4rem;
   max-width: 600px;
-  padding: 12px;
   margin-bottom: 10px;
 }
 
+header .hero {
+  padding: 12px;
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 15px; */
+}
+
 header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }

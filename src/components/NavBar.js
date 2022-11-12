@@ -23,6 +23,12 @@ function NavBar(props) {
       >
         GitHub
       </a>
+      <div
+        className={"" + props.currentSection === "contact" ? "selected" : ""}
+        onClick={props.contact}
+      >
+        Contact info
+      </div>
     </nav>
   );
 }
