@@ -16,6 +16,12 @@ function NavBar(props) {
       >
         Projects
       </div>
+      <div
+        className={"" + props.currentSection === "contact" ? "selected" : ""}
+        onClick={props.contact}
+      >
+        Contact info
+      </div>
       <a
         href="https://github.com/ARZ-barca"
         target={"_blank"}
@@ -23,12 +29,6 @@ function NavBar(props) {
       >
         GitHub
       </a>
-      <div
-        className={"" + props.currentSection === "contact" ? "selected" : ""}
-        onClick={props.contact}
-      >
-        Contact info
-      </div>
     </nav>
   );
 }
