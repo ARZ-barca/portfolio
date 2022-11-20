@@ -1,5 +1,4 @@
 import React from "react";
-// import Contact from "./Contact";
 import "./Header.css";
 import NavBar from "./NavBar";
 
@@ -11,7 +10,6 @@ function Header(props) {
           Hello World, my name is <span className="name">alireza</span>{" "}
           <span className="and">&&</span> welcome to my website
         </h1>
-        {/* <Contact /> */}
       </div>
       <NavBar
         currentSection={props.currentSection}
