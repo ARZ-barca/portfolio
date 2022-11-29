@@ -25,11 +25,11 @@ header .nav > *:hover {
   transform: translateY(3px);
 }
 
-header .nav .selected {
+header .nav .active {
   cursor: default;
 }
 
-.dark header .nav .selected {
+.dark header .nav .active {
   color: var(--color-100);
   border-bottom: 1px solid var(--color-100);
 }

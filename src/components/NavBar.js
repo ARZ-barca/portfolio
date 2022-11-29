@@ -1,28 +1,14 @@
 import React from "react";
-import "./NavBar.css";
+import "./styles/NavBar.css";
 import externallinkSVG from "../images/external-link.svg";
+import { NavLink } from "react-router-dom";
 
 function NavBar(props) {
   return (
     <nav className="nav">
-      <div
-        className={"" + props.currentSection === "aboutMe" ? "selected" : ""}
-        onClick={props.aboutMe}
-      >
-        About me
-      </div>
-      <div
-        className={"" + props.currentSection === "projects" ? "selected" : ""}
-        onClick={props.projects}
-      >
-        Projects
-      </div>
-      <div
-        className={"" + props.currentSection === "contact" ? "selected" : ""}
-        onClick={props.contact}
-      >
-        Contact info
-      </div>
+      <NavLink to="/">About me</NavLink>
+      <NavLink to="/projects">Projects</NavLink>
+      <NavLink to="/contact">Contact info</NavLink>
       <a
         href="https://github.com/ARZ-barca"
         target={"_blank"}

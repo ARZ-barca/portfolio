@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import "./Projects.css";
+import "./styles/Projects.css";
 import uniqid from "uniqid";
 
 function Projects() {

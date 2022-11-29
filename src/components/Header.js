@@ -1,8 +1,8 @@
 import React from "react";
-import "./Header.css";
+import "./styles/Header.css";
 import NavBar from "./NavBar";
 
-function Header(props) {
+function Header() {
   return (
     <header>
       <div className="hero">
@@ -11,12 +11,7 @@ function Header(props) {
           <span className="and">&&</span> welcome to my website
         </h1>
       </div>
-      <NavBar
-        currentSection={props.currentSection}
-        projects={props.projects}
-        aboutMe={props.aboutMe}
-        contact={props.contact}
-      />
+      <NavBar />
     </header>
   );
 }

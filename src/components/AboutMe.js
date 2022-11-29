@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutMe.css";
+import "./styles/AboutMe.css";
 
 function AboutMe(props) {
   return (
