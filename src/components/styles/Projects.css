@@ -1,4 +1,4 @@
-main .projects {
+.project-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -20,13 +20,24 @@ main .projects {
   box-shadow: 0 0 7px 0 var(--color-800);
 }
 
+.light main .project-card {
+  border: 2px solid var(--color-600);
+  color: var(--color-800);
+  background-color: var(--color-300);
+  box-shadow: 0 0 3px 0 var(--color-600);
+}
+
 .projects-heading {
   margin-left: 30px;
   margin-bottom: 20px;
 }
 
 .dark main .projects-heading {
-  color: var(--section-headings-dark);
+  color: var(--color-200);
+}
+
+.light main .projects-heading {
+  color: var(--color-700);
 }
 
 .project-heading {
@@ -36,6 +47,10 @@ main .projects {
 
 .dark main .project-heading {
   color: var(--color-300);
+}
+
+.light main .project-heading {
+  color: var(--color-600);
 }
 
 .project-links {
@@ -61,12 +76,24 @@ main .projects {
   background-color: var(--color-900);
 }
 
+.light main .project-links a:hover {
+  background-color: var(--color-400);
+}
+
 .dark main .project-links a {
   border-top: 1px solid var(--color-400);
 }
 
 .dark main .project-links a:not(:last-child) {
   border-right: 1px solid var(--color-400);
+}
+
+.light main .project-links a {
+  border-top: 2px solid var(--color-400);
+}
+
+.light main .project-links a:not(:last-child) {
+  border-right: 2px solid var(--color-400);
 }
 
 .project-links a:first-child {

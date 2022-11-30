@@ -17,10 +17,18 @@ main .contact-info-heading {
   margin-bottom: 15px;
 }
 
-.dark main .contact-info {
-  color: var(--color-300);
+.light .contact-info {
+  color: var(--color-700);
 }
 
-.dark main .contact-info {
-  color: var(--section-headings-dark);
+.light .contact-info ul {
+  color: var(--color-900);
+}
+
+.dark .contact-info {
+  color: var(--color-200);
+}
+
+.dark .contact-info ul {
+  color: var(--color-300);
 }

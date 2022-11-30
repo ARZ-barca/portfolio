@@ -1,22 +1,30 @@
-main .about-me {
+.about-me {
   max-width: 600px;
   margin: auto;
   padding: 0 20px 20px 20px;
 }
 
-main .about-me-p {
+.about-me-p {
   font-size: 1.3rem;
 }
 
-main .about-me-heading {
+.about-me-heading {
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
 
-.dark main .about-me-p {
+.dark .about-me-p {
   color: var(--color-300);
 }
 
-.dark main .about-me-heading {
-  color: var(--section-headings-dark);
+.light .about-me-p {
+  color: var(--color-900);
+}
+
+.dark .about-me-heading {
+  color: var(--color-200);
+}
+
+.light .about-me-heading {
+  color: var(--color-700);
 }

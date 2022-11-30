@@ -3,32 +3,96 @@
   color: var(--color-300);
 }
 
+.light header {
+  background-color: var(--color-300);
+  color: var(--color-700);
+}
+
 header .and {
   color: rgba(255, 72, 0, 0.733);
 }
 
+/* 
 header .name {
   --color: rgb(247, 183, 89);
   color: var(--color);
   border-bottom: 2px solid var(--color);
   padding-bottom: 5px;
-}
+} */
 
 header .intro {
   font-size: 1.4rem;
-  max-width: 600px;
   margin-bottom: 10px;
   line-height: 1.6;
 }
 
 header .hero {
   padding: 12px;
-  /* display: flex;
+  display: flex;
   justify-content: space-between;
-  align-items: center; 
-  gap: 15px; */
 }
 
 header {
   margin-bottom: 30px;
+}
+
+/* theme changer */
+.theme {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+}
+
+.dark .theme {
+  background-color: var(--color-600);
+  background-image: url("../../images/moon.svg");
+  border: 1px solid var(--color-400);
+}
+
+.dark .theme:hover {
+  filter: brightness(1.5);
+}
+
+.light .theme {
+  background-color: var(--color-200);
+  background-image: url("../../images/sun.svg");
+  border: 1px solid var(--color-400);
+}
+
+.light .theme:hover {
+  filter: brightness(0.8);
+}
+
+/* blinking curser animation */
+
+.cursor {
+  display: inline-block;
+  opacity: 1;
+  animation: blink 1s linear infinite;
+  padding-left: 1px;
+}
+
+.dark .cursor {
+  color: var(--color-300);
+}
+
+.light .cursor {
+  color: var(--color-700);
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

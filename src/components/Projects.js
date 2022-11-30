@@ -6,6 +6,27 @@ import uniqid from "uniqid";
 function Projects() {
   const projects = [
     {
+      title: "Battleship",
+      description: (
+        <p className="project-description">
+          A browser based player vs ai{" "}
+          <a
+            href="https://en.wikipedia.org/wiki/Battleship_(game)"
+            target={"_blank"}
+            rel={"noreferrer"}
+          >
+            Battleship
+          </a>{" "}
+          game
+        </p>
+      ),
+      links: {
+        source: "https://github.com/ARZ-barca/battleShip",
+        demo: "https://arz-barca.github.io/battleShip/",
+      },
+      key: uniqid(),
+    },
+    {
       title: "Etch-a-Sketch",
       description: (
         <p className="project-description">
@@ -23,6 +44,20 @@ function Projects() {
       links: {
         source: "https://github.com/ARZ-barca/etch-a-sketch",
         demo: "https://arz-barca.github.io/etch-a-sketch/",
+      },
+      key: uniqid(),
+    },
+    {
+      title: "Tic Tac Toe",
+      description: (
+        <p className="project-description">
+          A tic-tac-toe game that can be played player vs player or player vs ai
+          or ai vs ai. with 3 different ai.
+        </p>
+      ),
+      links: {
+        source: "https://github.com/ARZ-barca/tic-tac-toe",
+        demo: "https://arz-barca.github.io/tic-tac-toe/",
       },
       key: uniqid(),
     },
@@ -49,20 +84,6 @@ function Projects() {
       links: {
         source: "https://github.com/ARZ-barca/library",
         demo: "https://arz-barca.github.io/library/",
-      },
-      key: uniqid(),
-    },
-    {
-      title: "Tic Tac Toe",
-      description: (
-        <p className="project-description">
-          A tic-tac-toe game that can be played player vs player or player vs ai
-          or ai vs ai. with 3 different ai.
-        </p>
-      ),
-      links: {
-        source: "https://github.com/ARZ-barca/tic-tac-toe",
-        demo: "https://arz-barca.github.io/tic-tac-toe/",
       },
       key: uniqid(),
     },
@@ -101,27 +122,6 @@ function Projects() {
       },
       key: uniqid(),
     },
-    {
-      title: "Battleship",
-      description: (
-        <p className="project-description">
-          A browser based player vs ai{" "}
-          <a
-            href="https://en.wikipedia.org/wiki/Battleship_(game)"
-            target={"_blank"}
-            rel={"noreferrer"}
-          >
-            Battleship
-          </a>{" "}
-          game
-        </p>
-      ),
-      links: {
-        source: "https://github.com/ARZ-barca/battleShip",
-        demo: "https://arz-barca.github.io/battleShip/",
-      },
-      key: uniqid(),
-    },
   ];
   const projectCards = projects.map((project) => {
     return (
@@ -134,9 +134,9 @@ function Projects() {
     );
   });
   return (
-    <div>
+    <div className="projects">
       <h2 className="projects-heading">Projects</h2>
-      <div className="projects">{projectCards}</div>
+      <div className="project-cards">{projectCards}</div>
     </div>
   );
 }

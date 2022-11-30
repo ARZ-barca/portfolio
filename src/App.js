@@ -9,9 +9,14 @@ import NotFound from "./components/NotFound";
 
 function App() {
   const [theme, setTheme] = useState("dark");
+
+  function changeTheme() {
+    setTheme((theme) => (theme === "dark" ? "light" : "dark"));
+  }
+
   return (
     <div className={theme}>
-      <Header />
+      <Header changeTheme={changeTheme} />
       <main>
         <Routes>
           <Route path="/" element={<AboutMe />}></Route>

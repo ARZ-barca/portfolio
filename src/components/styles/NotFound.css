@@ -8,3 +8,7 @@
 .dark .not-found {
   color: var(--color-300);
 }
+
+.light .not-found {
+  color: var(--color-800);
+}
