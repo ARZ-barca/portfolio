@@ -62,6 +62,19 @@ function Projects() {
       key: uniqid(),
     },
     {
+      title: "Memory card",
+      description: (
+        <p className="project-description">
+          A memory game based on digimon series.
+        </p>
+      ),
+      links: {
+        source: "https://github.com/ARZ-barca/memory-card",
+        demo: "https://arz-barca.github.io/memory-card/",
+      },
+      key: uniqid(),
+    },
+    {
       title: "Calculator",
       description: (
         <p className="project-description">
