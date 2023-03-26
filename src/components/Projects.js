@@ -88,32 +88,6 @@ function Projects() {
       key: uniqid(),
     },
     {
-      title: "Library",
-      description: (
-        <p className="project-description">
-          A library app that uses browser storage api to store you books.
-        </p>
-      ),
-      links: {
-        source: "https://github.com/ARZ-barca/library",
-        demo: "https://arz-barca.github.io/library/",
-      },
-      key: uniqid(),
-    },
-    {
-      title: "Todo App",
-      description: (
-        <p className="project-description">
-          A todo app for the sake of tradition. ( I hate todo apps )
-        </p>
-      ),
-      links: {
-        source: "https://github.com/ARZ-barca/todolist",
-        demo: "https://arz-barca.github.io/todolist/",
-      },
-      key: uniqid(),
-    },
-    {
       title: "Weather App",
       description: (
         <p className="project-description">
